@@ -4,25 +4,25 @@ const crewMembers = [
   {
     id: 1,
     name: "Bill Mahoney",
-    role: "Product Owner",
+    role: "Product&nbsp;&nbsp;Owner",
     image: "photo1.png",
   },
   {
     id: 2,
     name: "Saba Cabrera",
-    role: "Art Director",
+    role: "Art&nbsp;&nbsp;Director",
     image: "photo2.png",
   },
   {
     id: 3,
     name: "Shae Le",
-    role: "Tech Lead",
+    role: "Tech&nbsp;&nbsp;Lead",
     image: "photo3.png",
   },
   {
     id: 4,
     name: "Skylah Lu",
-    role: "UX Designer",
+    role: "UX&nbsp;&nbsp;Designer",
     image: "photo4.png",
   },
   {
@@ -42,17 +42,17 @@ const crewMembers = [
 
 
 const displayCrew = () => {
-  let htmlText = `<ul>`;
-                      crewMembers.map((member) => {
-                        htmlText += `<li key=${member.id}>
-                            <div class="details">
-                              <img src="images/${member.image}" alt=${member.name} />
-                              <h4>${member.role}</h4>
-                            </div>
-                            <h3>${member.name}</h3>
-                          </li>`;
+  let htmlText = `<ul class="crew">`;
+                    crewMembers.map((member) => {
+                      htmlText +=`<li class="member" key=${member.id}>
+                                    <div class="details">
+                                      <img src="images/${member.image}" alt=${member.name} />
+                                      <h4>${member.role}</h4>
+                                    </div>
+                                    <h3>${member.name}</h3>
+                                  </li>`;
                       })          
-        htmlText += `</ul>`;
+      htmlText +=`</ul>`;
 
   crewContainer.innerHTML = htmlText;
 };
