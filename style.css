@@ -48,6 +48,10 @@ body {
   height: 237px;
 }
 
+.member:nth-child(even) {
+  margin-top: 60px;
+}
+
 .details {
   display: flex;
 }
@@ -82,7 +86,7 @@ body {
 footer {
   position:absolute;
   width: 290px;
-  top: 1370px;
+  top: 1300px;
   bottom: 24px;
   color: #a9a9a9;
   font-family: 'Montserrat', sans-serif;
